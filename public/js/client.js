@@ -12,12 +12,9 @@ function toggleAlert(isError = true, message) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("Script loaded");
-
     // login form, form handling for incorrect/correct message
     const loginForm = document.querySelector('.login-form');
     if (loginForm) {
-        console.log("in form");
         loginForm.addEventListener('submit', async (e) => {
 
             console.log("form submitted");
