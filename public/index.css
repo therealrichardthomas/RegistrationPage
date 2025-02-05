@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: url('../static/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    border: 2px solid red;
+    color: white;
+    position: absolute;
+    top: 20vh;
+    left: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 43vh;
+    width: 30vw;
+    background:rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 2px solid rgb(255, 0, 255, 0.5);
+    box-shadow: 0px 0px 8px 10px rgba(255, 105, 255, 0.4);
+}
+
+.container h1 {
+    font-family: 'Heebo';
+    border-bottom: 5px solid purple;
+    margin: 22px 0px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+    min-height: 0;
+    overflow: auto;
+}
+
+.box input{
+    color: white;
+    padding: 6px 0px;
+    font-size: 20px;
+    margin: 15px 0px;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid purple;
+    transition: 0.5s;
+}
+.box input::placeholder {
+    color: rgb(216, 216, 216);
+}
+
+.box i {
+    width: 25px;
+    text-align: center;
+}
+
+.btn {
+    width: 100%;
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Heebo';
+    color: white;
+    background: none;
+    outline: none;
+    border: none;
+    background: rgba(186, 97, 186, 0.6);
+    outline: none;
+}
+.btn:hover {
+    cursor: pointer;
+}
+.box input:focus {
+    border-bottom: 2px solid rgb(90, 161, 233);
+}
+.login-form a {
+    padding-top: 5px;
+    font-size: 15px;
+    font-family: 'Heebo';
+    color: rgb(232, 232, 232);
+    text-decoration: none;
+    font-style: italic;
+}
+
+.message {
+    color: white;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    padding: 15px;
+    border-radius: 10px;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display:none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-50%) translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+    }
+}

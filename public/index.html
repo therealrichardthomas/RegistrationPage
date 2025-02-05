@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Login to CodeWithRichard</title>
+
+    <link rel="stylesheet" href="../public/index.css">
+    <link rel="icon" href="../static/favicon.ico">
+    <script src="https://kit.fontawesome.com/14d7ff7113.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sign In</h1>
+        <form action="/login" method="post" class="login-form">
+            <div class="box">
+                <i class="fa fa-envelope"></i>
+                <input type="email" name="loginEmail" id="login-email" placeholder="Enter your email">
+            </div>
+            <div class="box">
+                <i class="fa fa-key"></i>
+                <input type="password" name="loginPassword" id="login-password" placeholder="Enter your password">
+            </div>
+            <button class="btn">Sign In</button>
+            <a href="../public/create.html"><span>Create Account</span></a>
+        </form>
+    </div>
+
+    <div class="message">
+        A message
+    </div>
+    
+    <script src="/public/js/client.js" defer></script> 
+</body>
+</html>

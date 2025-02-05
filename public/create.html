@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="../public/create.css">
+    <link rel="icon" href="../static/favicon.ico">
+    <script src="https://kit.fontawesome.com/14d7ff7113.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Create an Account</h1>
+        <form action="/signup" method="post" class="signup-form">
+            <div class="box">
+                <i class="fa fa-user"></i>
+                <input type="text" name="username" id="signup-username" placeholder="Create a username">
+            </div>
+            <div class="box">
+                <i class="fa fa-envelope"></i>
+                <input type="email" name="signupEmail" id="signup-email" placeholder="Enter your email">
+            </div>
+            <div class="box">
+                <i class="fa fa-key"></i>
+                <input type="password" name="signupPassword" id="signup-password" placeholder="Create a password">
+            </div>
+            <button class="btn">Create Account</button>
+            <p>Already have an account? Sign in <a href="/">here</a>
+        </form>
+    </div>
+
+    <div class="message">
+    </div>
+
+    <script src="../public/js/client.js"></script>
+</body>
+</html>
